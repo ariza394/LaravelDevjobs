@@ -19,7 +19,8 @@ use App\Http\Controllers\VacanteController;
 Auth::routes(['verify' => true]);
 
 //rutas protegidas
-Route::group(['middleware' => ['auth','verified']],function(){
+//Route::group(['middleware' => ['auth','verified']],function(){
+    Route::group(['middleware' => ['auth']],function(){
     
     //vacants route
     Route::get('/vacantes','VacanteController@index')->name('vacantes.index');
