@@ -49,7 +49,7 @@ class CandidatoController extends Controller
         $data = $request->validate([
             'nombre' => 'required',
             'email' => 'required|email',
-            //'cv' => 'required|mimes:pdf',
+            'cv' => 'required|mimes:pdf',
             'vacante_id' => 'required'
         ]);
         
@@ -79,8 +79,7 @@ class CandidatoController extends Controller
         $vacante->candidatos()->create([
             'nombre' => $data['nombre'],
             'email' => $data['email'],
-            //'cv' => $nombreArchivo
-            'cv' => '123'
+            'cv' => $nombreArchivo
         ]);
 
         $reclutador = $vacante->reclutador;

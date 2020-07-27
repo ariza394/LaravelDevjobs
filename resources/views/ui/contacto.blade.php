@@ -52,9 +52,7 @@
                 id="cv"
                 class="p-3 rounded form-input w-full @error('cv') border border-red-500 @enderror"
                 accept="application/pdf"
-                disabled
             >
-            <h6>sorry, no available in production by costs</h6>
             @error('cv')
                 <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 w-full mt-5" role="alert">
                     <p>{{$message}}</p>

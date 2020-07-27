@@ -18,10 +18,9 @@
                     </p>
                     <a 
                         class="bg-teal-500 p-3 inline-block text-xs font-bold uppercase text-white" 
-                        {{--href="/storage/cv/{{$candidato->cv}}"--}}
+                        href="/storage/cv/{{$candidato->cv}}"
                         
                     >Explore CV</a>
-                    <h6>Sorry, no available in production by costs</h6>
                 </li>
             @endforeach
         </ul>
